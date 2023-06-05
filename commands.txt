@@ -1,0 +1,27 @@
+Point to be noted here is all this setup is for the directory naming "gitCommands".
+Change the name accordingly.
+
+1.Create a new repository on github (Do not create readme at start to follow this tutorial).
+
+2.After that create a local folder/repo on device of same name.
+
+3.Type following commands to initialise git on this local repo and to connect it with the online github repo:
+echo "# gitCommands" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/suryanshGuleria/gitCommands.git
+git push -u origin main
+
+4.You are good to go after this however you will be required to set up token before actually pusing the code(from local to github repo) for the first time.
+
+5.To resolve this we will have to set a access token for the local repo and authentication will take place via that token.
+
+6.First create a token with access from settings>developer>createToken on your github profile and copy the genereated token from there.
+
+7.After that type following command: git remote set-url origin https://suryanshGuleria:<paste token here>@github.com/suryanshGuleria/<paste repo name here>.git
+
+8.After this you are all set to commit to online repo.
+
+9.There is another way to do this where you have pre-exsisting repo on local system and you just have to setup the origin and you are good to go. Just have to make sure about the branch we are commiting changes onto.
