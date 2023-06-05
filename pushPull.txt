@@ -1,0 +1,44 @@
+1.Fork: If you want to work on a project you don't directly work on the main branch of the org. We first fork the code
+to our own account using <fork> option and then we clone the repo on to our system.(refer point 6 after this)
+
+2.(Origin) are the urls that are from our own profile and (upstream) urls are the one that are of the original 
+owner's repo.
+
+3.We can setup the origin URL using following command: remote add origin <paste origin url here>
+
+4.Similarly we can set up the upstream using: remote add upstream <paste upstream url here>
+
+5.Based on the requirements we can push to and pull from origin and upstream.
+
+6.Now coming back on to the fork. You forked and cloned the repo. Now to work on the forked project we must create a seprate 
+branch(which later will be used to merge) and then work on this branch.
+
+7.It is advised to work on seprate branches for seprate features as this help in keeping main brach entaced which is 
+benificial(in testing on the <owners side> and for keeping upto date with remote for <local system>).
+
+8.Once we have made changes or added new feature we push that brach on our github repo and then we can create a pull<merge> 
+request asking the owners to include our code into the main/master branch.
+
+9.Only one pull request is associated with one branch <if we commit after the pull request is being made then we cannot create new pull request from same branch>
+
+10.If a branch already have a pull request associated with it will not allow us to create new pull request all the commits will be added 
+to that pull request only.
+
+<To remove a commit from the pull request>
+11.Reset the branch to the commit that was made just before the commit to be removed.Command: git reset <reset code>. After this the
+changes done in the commit <to be removed> will be in staged area. We can add and then stash those changes and they will be removed
+from the working directory.
+Now when we will push these changes we must force push because commit records must be in sync and we are trying to do changes in it.
+command: git push origin bname -f.
+
+12.We must keep our forked repo's main branch in sync with upstream's main brach. For this we can use <fetch origin> button on github or on local
+command:fetch --all --prune 
+after this we must merge our branch with upstream's main brach by using this 
+command: reset --hard upstream/main
+or all this can be achieved using command: git pull upstream main.
+
+13.We can merge commits using command: git rebase -i <commit id after which commits are to be merged>.
+After this we pick and squash from menu and finally a single commit is begin made (we can also add commit message to this main commit).
+
+
+
