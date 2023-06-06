@@ -8,7 +8,7 @@ owner's repo.
 
 4.Similarly we can set up the upstream using: git remote add upstream <paste upstream url here>
 
-5.Based on the requirements we can push to and pull from origin and upstream.
+5.Based on the requirements we can push to and pull from origin and upstream. command: git remote -v (to check origin and upstream url)
 
 6.Now coming back on to the fork. You forked and cloned the repo. Now to work on the forked project we must create a seprate 
 branch(which later will be used to merge) and then work on this branch.
