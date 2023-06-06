@@ -4,9 +4,9 @@ to our own account using <fork> option and then we clone the repo on to our syst
 2.(Origin) are the urls that are from our own profile and (upstream) urls are the one that are of the original 
 owner's repo.
 
-3.We can setup the origin URL using following command: remote add origin <paste origin url here>
+3.We can setup the origin URL using following command: git remote add origin <paste origin url here>
 
-4.Similarly we can set up the upstream using: remote add upstream <paste upstream url here>
+4.Similarly we can set up the upstream using: git remote add upstream <paste upstream url here>
 
 5.Based on the requirements we can push to and pull from origin and upstream.
 

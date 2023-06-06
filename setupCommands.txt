@@ -11,10 +11,10 @@ git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
-git remote add origin https://github.com/suryanshGuleria/gitCommands.git
+git remote add origin https://github.com/suryanshGuleria/<repo name>.git
 git push -u origin main
 
-4.You are good to go after this however you will be required to set up token before actually pusing the code(from local to github repo) for the first time.
+4.You are good to go after this however you will be required to set up token before actually pushing the code(from local to github repo) for the first time.
 
 5.To resolve this we will have to set a access token for the local repo and authentication will take place via that token.
 
